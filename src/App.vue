@@ -63,13 +63,9 @@ const projects = ref([
         <img src="https://img.alicdn.com/imgextra/i1/O1CN01Lp1q1b1s9s2e5d4g2_!!6000000005721-2-tps-200-200.png" alt="Avatar" class="avatar">
         <div class="status-indicator"></div>
       </div>
-      <!-- 【核心修改】将 WangTong07 替换为 疯狂的大呲花 -->
       <h1 class="main-title">你好, 我是 疯狂的大呲花</h1>
       <p class="subtitle">一个充满热情的AI学习者与创造者。在15天内，我从零开始，构建了这一系列AI应用，探索从文本生成到多模态处理的无限可能。</p>
-      <div class="social-links">
-        <a href="https://github.com/WangTong07" target="_blank" class="social-link">GitHub</a>
-        <a href="https://gitee.com/wangtong07" target="_blank" class="social-link">Gitee</a>
-      </div>
+      <!-- 【核心修改】social-links 区域已被彻底删除 -->
     </header>
 
     <main class="projects-section">
@@ -117,6 +113,7 @@ body { font-family: var(--font-sans); background-color: var(--bg-color); color: 
 .status-indicator { position: absolute; bottom: 8px; right: 8px; width: 24px; height: 24px; background-color: #22c55e; border-radius: 50%; border: 3px solid var(--bg-color); }
 .main-title { font-size: 3rem; font-weight: 800; margin: 0; letter-spacing: -1.5px; }
 .subtitle { max-width: 600px; margin: 1rem auto 2rem; font-size: 1.125rem; line-height: 1.8; color: var(--text-dim-color); }
+/* .social-links 样式已被保留，但由于template中已删除，所以不会生效 */
 .social-links { display: flex; justify-content: center; gap: 1rem; }
 .social-link { padding: 0.75rem 1.5rem; border-radius: 999px; background-color: var(--card-bg-color); border: 1px solid var(--border-color); color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.2s ease; }
 .social-link:hover { background-color: var(--primary-color); border-color: var(--primary-color); color: var(--bg-color); }
